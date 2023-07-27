@@ -1,0 +1,119 @@
+$color-primary: #3b38ad;
+$color-text: #818189;
+$background: #f9f9f9;
+$white: #ffffff;
+$font-playfair: "Playfair Display", serif;
+$font-lato: "Lato", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.header-bg {
+  height: auto;
+  width: 100%;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-lato;
+    .logo {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-primary;
+      font-weight: 600;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 100px;
+      color: $color-primary;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.main-bg {
+  height: auto;
+  width: 100%;
+  background: $background;
+  h1 {
+    color: $color-primary;
+    font-size: 160px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: $font-playfair;
+    position: relative;
+    z-index: 99;
+    &::before {
+      content: "bem vindo ao";
+      position: absolute;
+      left: 0;
+      top: -10px;
+      color: $color-primary;
+      font-size: 40px;
+      font-weight: 400;
+    }
+  }
+  .images-content-box {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    margin-left: 70px;
+    .image-one {
+      width: 350px;
+      position: relative;
+      z-index: 1;
+    }
+    .image-two {
+      width: 350px;
+      position: relative;
+      z-index: 1;
+      bottom: 80px;
+    }
+    button {
+      display: flex;
+      align-self: end;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      outline: none;
+      border: none;
+      background: $color-primary;
+      color: $white;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      position: relative;
+      left: -390px;
+    }
+  }
+}
+
+.rooms-bg {
+  width: 100%;
+  height: auto;
+  h2 {
+    color: $color-primary;
+    text-transform: uppercase;
+    font-family: $font-lato;
+  }
+}
