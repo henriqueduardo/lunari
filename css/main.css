@@ -175,7 +175,7 @@ html {
 .pictures-bg {
   margin-top: 40px;
   width: 100%;
-  height: 50vh;
+  height: auto;
   background: #f9f9f9;
 }
 .pictures-bg figure {
@@ -194,4 +194,59 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
   width: 60%;
+}
+
+.gym-bg {
+  height: 500px;
+  width: 100%;
+  background: #f9f9f9;
+}
+.gym-bg h2 {
+  color: #3b38ad;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+.gym-bg .gym-content {
+  display: flex;
+  width: 100%;
+}
+.gym-bg .gym-content figure {
+  width: 60%;
+  display: flex;
+  gap: 5px;
+}
+.gym-bg .gym-content figure .gym-image-1-1 {
+  width: 300px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gym-bg .gym-content figure .gym-image-2-2 {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gym-bg .gym-content .gym-text {
+  width: 40%;
+  margin-left: 100px;
+  margin-right: 190px;
+}
+.gym-bg .gym-content .gym-text p {
+  color: #3b38ad;
+  font-weight: 100;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 40px;
+}
+.gym-bg .gym-content .gym-text button {
+  border: 1px solid #3b38ad;
+  color: #3b38ad;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  width: 100%;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
