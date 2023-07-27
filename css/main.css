@@ -20,6 +20,7 @@ html {
 .header-bg {
   height: auto;
   width: 100%;
+  background: #f9f9f9;
 }
 .header-bg nav {
   display: flex;
@@ -103,9 +104,70 @@ html {
 .rooms-bg {
   width: 100%;
   height: auto;
+  background: #f9f9f9;
 }
 .rooms-bg h2 {
   color: #3b38ad;
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
+  margin-bottom: 60px;
+}
+.rooms-bg .rooms-content {
+  display: flex;
+  justify-content: space-between;
+}
+.rooms-bg .rooms-content ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 70px;
+  width: 350px;
+  height: 400px;
+  list-style: none;
+  font-family: "Playfair Display", serif;
+  color: #818189;
+  font-size: 40px;
+}
+.rooms-bg .rooms-content ul li {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+.rooms-bg .rooms-content ul li:hover {
+  color: #3b38ad;
+  font-weight: 500;
+  position: relative;
+  transform: translateX(40px);
+}
+.rooms-bg .rooms-content img {
+  width: 660px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.rooms-bg p {
+  margin-top: 60px;
+  margin-left: 70px;
+  color: #3b38ad;
+  font-weight: 100;
+  width: 350px;
+}
+.rooms-bg button {
+  display: flex;
+  align-self: end;
+  width: 350px;
+  margin-top: 40px;
+  margin-left: 70px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  outline: none;
+  border: none;
+  background: rgb(59, 56, 173);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
 }/*# sourceMappingURL=main.css.map */

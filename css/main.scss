@@ -28,6 +28,7 @@ html {
 .header-bg {
   height: auto;
   width: 100%;
+  background: $background;
   nav {
     display: flex;
     justify-content: space-between;
@@ -111,9 +112,69 @@ html {
 .rooms-bg {
   width: 100%;
   height: auto;
+  background: $background;
   h2 {
     color: $color-primary;
     text-transform: uppercase;
     font-family: $font-lato;
+    margin-bottom: 60px;
+  }
+  .rooms-content {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-left: 70px;
+      width: 350px;
+      height: 400px;
+      list-style: none;
+      font-family: $font-playfair;
+      color: $color-text;
+      font-size: 40px;
+      li {
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        position: relative;
+        &:hover {
+          color: $color-primary;
+          font-weight: 500;
+          position: relative;
+          transform: translateX(40px);
+        }
+      }
+    }
+    img {
+      width: 660px;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+  p {
+    margin-top: 60px;
+    margin-left: 70px;
+    color: $color-primary;
+    font-weight: 100;
+    width: 350px;
+  }
+  button {
+    display: flex;
+    align-self: end;
+    width: 350px;
+    margin-top: 40px;
+    margin-left: 70px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    outline: none;
+    border: none;
+    background: rgb(59, 56, 173);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
   }
 }
