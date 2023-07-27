@@ -9,6 +9,7 @@ html {
   min-width: 320px;
   max-width: 1500px;
   margin: 0 auto;
+  background: #f9f9f9;
 }
 
 .container {
@@ -149,7 +150,9 @@ html {
   margin-top: 60px;
   margin-left: 70px;
   color: #3b38ad;
-  font-weight: 100;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
   width: 350px;
 }
 .rooms-bg button {
@@ -202,6 +205,8 @@ html {
   background: #f9f9f9;
 }
 .gym-bg h2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
   color: #3b38ad;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
@@ -250,4 +255,62 @@ html {
   outline: none;
   background: transparent;
   cursor: pointer;
+}
+
+.about-bg {
+  height: auto;
+  width: 100%;
+  background: #f9f9f9;
+}
+.about-bg h2 {
+  color: #3b38ad;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+.about-bg p {
+  margin-top: 40px;
+  margin-left: 70px;
+  width: 500px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #3b38ad;
+}
+.about-bg p .highlight {
+  font-size: 100px;
+  font-family: "Playfair Display", serif;
+}
+.about-bg button {
+  color: #f9f9f9;
+  background: #3b38ad;
+  margin-left: 70px;
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  width: 500px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.about-bg figure {
+  display: flex;
+  gap: 5px;
+}
+.about-bg figure img {
+  filter: grayscale(100%);
+}
+.about-bg figure .image-2-2 {
+  width: 300px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-bg figure .image-4-4 {
+  width: 890px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
