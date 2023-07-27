@@ -178,3 +178,25 @@ html {
     position: relative;
   }
 }
+
+.pictures-bg {
+  margin-top: 40px;
+  width: 100%;
+  height: 50vh;
+  background: $background;
+  figure {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    .image-2-2 {
+      height: 450px;
+      object-fit: cover;
+      width: 20%;
+    }
+    .image-4-4 {
+      height: 450px;
+      object-fit: cover;
+      width: 60%;
+    }
+  }
+}
