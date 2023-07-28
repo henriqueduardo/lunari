@@ -25,6 +25,7 @@ html {
 }
 .header-bg nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-family: "Lato", sans-serif;
 }
@@ -41,6 +42,46 @@ html {
   color: #3b38ad;
   font-weight: 600;
   text-transform: uppercase;
+}
+.header-bg nav ul .menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.header-bg nav ul .menu a {
+  text-decoration: none;
+  color: #3b38ad;
+}
+.header-bg nav ul .menu .dropdown-menu {
+  position: absolute;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: auto;
+  width: auto;
+  z-index: 999;
+}
+.header-bg nav ul .menu .dropdown-menu li {
+  padding: 6px 0px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.header-bg nav ul .menu .dropdown-menu li:hover {
+  color: #3b38ad;
+  font-weight: 500;
+  position: relative;
+  transform: translateX(20px);
+}
+.header-bg nav ul .menu .dropdown-menu a {
+  text-decoration: none;
+  color: #818189;
+}
+.header-bg nav ul .menu .dropdown-menu a:hover {
+  color: #3b38ad;
 }
 
 .main-bg {
@@ -77,6 +118,9 @@ html {
   position: relative;
   z-index: 1;
 }
+.main-bg .images-content-box div {
+  width: 350px;
+}
 .main-bg .images-content-box .image-two {
   width: 350px;
   position: relative;
@@ -84,22 +128,35 @@ html {
   bottom: 80px;
 }
 .main-bg .images-content-box button {
-  display: flex;
-  align-self: end;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
+  color: #f9f9f9;
+  background: #3b38ad;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  width: 350px;
   outline: none;
   border: none;
-  background: #3b38ad;
-  color: #ffffff;
-  font-weight: 700;
-  text-transform: uppercase;
   cursor: pointer;
+}
+.main-bg div .pattern {
   position: relative;
-  left: -390px;
+  top: 68px;
+  height: 250px;
+  width: 250px;
+  border-radius: 9999px;
+  border: 1px solid #3b38ad;
+  background: transparent;
+}
+.main-bg div .pattern:before {
+  position: absolute;
+  top: 125px;
+  right: -25px;
+  content: "";
+  width: 55px;
+  height: 1px;
+  background: #3b38ad;
 }
 
 .rooms-bg {
