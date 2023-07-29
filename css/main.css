@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -47,7 +48,6 @@ html {
   position: relative;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
 }
 .header-bg nav ul .menu a {
   text-decoration: none;
@@ -357,4 +357,97 @@ html {
   height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.faq-bg {
+  width: 100%;
+  height: auto;
+  background: #f9f9f9;
+}
+.faq-bg .faq-content {
+  display: flex;
+  gap: 20px;
+}
+.faq-bg .faq-content img {
+  width: 40%;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.faq-bg .faq-content ul {
+  width: 60%;
+  list-style: none;
+}
+.faq-bg .faq-content ul h3 {
+  font-family: "Playfair Display", serif;
+  color: #3b38ad;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.faq-bg .faq-content ul li {
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  border-bottom: 1px solid gray;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+.faq-bg .faq-content ul span {
+  display: none;
+}
+
+.specials-bg {
+  height: auto;
+  width: 100%;
+  background: #f9f9f9;
+}
+.specials-bg h2 {
+  font-family: "Lato", sans-serif;
+  color: #3b38ad;
+  text-transform: uppercase;
+}
+.specials-bg .specials-content-box {
+  display: flex;
+}
+.specials-bg .specials-content-box div {
+  width: 550px;
+  border-top: 1px solid #3b38ad;
+  border-right: 1px solid #3b38ad;
+  text-align: center;
+}
+.specials-bg .specials-content-box div h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  color: #3b38ad;
+  text-transform: uppercase;
+  padding: 20px 0px;
+}
+.specials-bg .specials-content-box div p {
+  font-family: "Lato", sans-serif;
+  color: #818189;
+  padding: 0px 60px;
+  padding-bottom: 30px;
+}
+.specials-bg .specials-content-box div:last-child {
+  border-right: none;
+}
+
+.footer-bg {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+.footer-bg p {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  padding: 40px 0px;
+  color: #3b38ad;
+  font-size: 20px;
+}
+.footer-bg p a {
+  text-decoration: none;
+  color: #3b38ad;
+}
+.footer-bg p a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
