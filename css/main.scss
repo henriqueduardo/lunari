@@ -481,20 +481,22 @@ html {
     box-shadow: 0 0 0 10px $background;
     position: relative;
     .btn-close {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
+      width: 40px;
+      height: 40px;
       border: 4px solid $color-primary;
-      background: $background;
-      top: -30px;
-      right: -30px;
+      background: #f9f9f9;
+      top: 5px;
+      right: 5px;
       position: absolute;
-      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 0 4px $background;
       cursor: pointer;
       i {
         font-size: 26px;
-        color: $color-primary;
-        font-weight: 700;
+        color: $color-text;
+        &:hover {
+          transition: 0.3s;
+          color: $color-primary;
+        }
       }
     }
     h2 {

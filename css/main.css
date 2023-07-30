@@ -64,7 +64,7 @@ html {
   gap: 10px;
   height: auto;
   width: auto;
-  z-index: 99;
+  z-index: 900;
 }
 .header-bg nav ul .menu .dropdown-menu li {
   padding: 6px 0px;
@@ -481,21 +481,23 @@ html {
   position: relative;
 }
 .modal .modal-content .btn-close {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   border: 4px solid #3b38ad;
   background: #f9f9f9;
-  top: -30px;
-  right: -30px;
+  top: 5px;
+  right: 5px;
   position: absolute;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 4px #f9f9f9;
   cursor: pointer;
 }
 .modal .modal-content .btn-close i {
   font-size: 26px;
+  color: #818189;
+}
+.modal .modal-content .btn-close i:hover {
+  transition: 0.3s;
   color: #3b38ad;
-  font-weight: 700;
 }
 .modal .modal-content h2 {
   color: #3b38ad;
