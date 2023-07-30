@@ -44,6 +44,9 @@ html {
   font-weight: 600;
   text-transform: uppercase;
 }
+.header-bg nav ul .btn-contact {
+  cursor: pointer;
+}
 .header-bg nav ul .menu {
   position: relative;
   display: flex;
@@ -61,7 +64,7 @@ html {
   gap: 10px;
   height: auto;
   width: auto;
-  z-index: 999;
+  z-index: 99;
 }
 .header-bg nav ul .menu .dropdown-menu li {
   padding: 6px 0px;
@@ -450,4 +453,99 @@ html {
 }
 .footer-bg p a:hover {
   text-decoration: underline;
+}
+
+.modal {
+  display: none !important;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+  transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+.modal .modal-content {
+  background: #f9f9f9;
+  width: 80vw;
+  max-width: 600px;
+  padding: 40px;
+  border: 10px solid #3b38ad;
+  box-shadow: 0 0 0 10px #f9f9f9;
+  position: relative;
+}
+.modal .modal-content .btn-close {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid #3b38ad;
+  background: #f9f9f9;
+  top: -30px;
+  right: -30px;
+  position: absolute;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.modal .modal-content .btn-close i {
+  font-size: 26px;
+  color: #3b38ad;
+  font-weight: 700;
+}
+.modal .modal-content h2 {
+  color: #3b38ad;
+  display: block;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 5px;
+}
+.modal .modal-content p {
+  color: #222222;
+  display: block;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 5px;
+}
+.modal .modal-content label {
+  color: #222222;
+  display: block;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.modal .modal-content input {
+  width: 100%;
+  padding: 6px 12px;
+  border: 2px solid #222222;
+  font-family: "Lato", sans-serif;
+}
+.modal .modal-content textarea {
+  width: 100%;
+  height: 64px;
+  padding: 6px 12px;
+  border: 2px solid #222222;
+}
+.modal .modal-content .btn-submit {
+  color: #f9f9f9;
+  margin-top: 10px;
+  background: #3b38ad;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal.active {
+  display: flex !important;
 }/*# sourceMappingURL=main.css.map */

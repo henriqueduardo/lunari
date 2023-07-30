@@ -2,6 +2,7 @@ $color-primary: #3b38ad;
 $color-text: #818189;
 $background: #f9f9f9;
 $white: #ffffff;
+$black: #222222;
 $font-playfair: "Playfair Display", serif;
 $font-lato: "Lato", sans-serif;
 
@@ -49,6 +50,9 @@ html {
       color: $color-primary;
       font-weight: 600;
       text-transform: uppercase;
+      .btn-contact {
+        cursor: pointer;
+      }
       .menu {
         position: relative;
         display: flex;
@@ -65,7 +69,7 @@ html {
           gap: 10px;
           height: auto;
           width: auto;
-          z-index: 999;
+          z-index: 900;
           li {
             padding: 6px 0px;
             font-family: $font-lato;
@@ -427,7 +431,7 @@ html {
       }
     }
     div:last-child {
-      border-right: none
+      border-right: none;
     }
   }
 }
@@ -450,4 +454,100 @@ html {
       }
     }
   }
+}
+
+.modal {
+  display: none !important;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+  transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out,
+    transform 0.25s ease-in-out;
+  .modal-content {
+    background: $background;
+    width: 80vw;
+    max-width: 600px;
+    padding: 40px;
+    border: 10px solid $color-primary;
+    box-shadow: 0 0 0 10px $background;
+    position: relative;
+    .btn-close {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 4px solid $color-primary;
+      background: $background;
+      top: -30px;
+      right: -30px;
+      position: absolute;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      i {
+        font-size: 26px;
+        color: $color-primary;
+        font-weight: 700;
+      }
+    }
+    h2 {
+      color: $color-primary;
+      display: block;
+      font-size: 26px;
+      font-weight: bold;
+      font-family: $font-lato;
+      margin-bottom: 5px;
+    }
+    p {
+      color: $black;
+      display: block;
+      font-weight: bold;
+      font-family: $font-lato;
+      margin-bottom: 5px;
+    }
+    label {
+      color: $black;
+      display: block;
+      font-weight: bold;
+      font-family: $font-lato;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 6px 12px;
+      border: 2px solid $black;
+      font-family: $font-lato;
+    }
+    textarea {
+      width: 100%;
+      height: 64px;
+      padding: 6px 12px;
+      border: 2px solid $black;
+    }
+    .btn-submit {
+      color: #f9f9f9;
+      margin-top: 10px;
+      background: #3b38ad;
+      font-weight: 700;
+      font-size: 14px;
+      font-family: "Lato", sans-serif;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.modal.active {
+  display: flex !important;
 }
