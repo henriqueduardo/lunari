@@ -14,10 +14,7 @@ function initModal() {
 
     function removeModalOnEsc(event) {
       if (event.key === "Escape") {
-        modal.classList.contains("active");
-        if (modal) {
-          modal.classList.remove("active");
-        }
+        modal.classList.remove("active");
       }
     }
 
