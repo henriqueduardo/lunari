@@ -481,8 +481,6 @@ html {
   position: relative;
 }
 .modal .modal-content .btn-close {
-  width: 40px;
-  height: 40px;
   border: 4px solid #3b38ad;
   background: #f9f9f9;
   top: 5px;
@@ -492,6 +490,7 @@ html {
   cursor: pointer;
 }
 .modal .modal-content .btn-close i {
+  padding: 4px;
   font-size: 26px;
   color: #818189;
 }
@@ -525,14 +524,40 @@ html {
 .modal .modal-content input {
   width: 100%;
   padding: 6px 12px;
-  border: 2px solid #222222;
+  outline: 2px solid #222222;
+  border: none;
   font-family: "Lato", sans-serif;
+}
+.modal .modal-content .input-content {
+  position: relative;
+}
+.modal .modal-content .input-content .error-focus {
+  outline: 2px solid red;
+  border: none;
+}
+.modal .modal-content .input-content .sucess-focus {
+  outline: 2px solid seagreen;
+  border: none;
+}
+.modal .modal-content .input-content .error-name, .modal .modal-content .input-content .error-email, .modal .modal-content .input-content .error-message {
+  display: none;
+  position: absolute;
+  font-family: "Lato", sans-serif;
+  color: #FF0000;
+  font-size: 14px;
+  font-weight: 400;
+  right: 0;
+  top: 2px;
+}
+.modal .modal-content .input-content .error-name.active, .modal .modal-content .input-content .error-email.active, .modal .modal-content .input-content .error-message.active {
+  display: block;
 }
 .modal .modal-content textarea {
   width: 100%;
   height: 64px;
   padding: 6px 12px;
   border: 2px solid #222222;
+  outline: none;
 }
 .modal .modal-content .btn-submit {
   color: #f9f9f9;

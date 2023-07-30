@@ -200,12 +200,21 @@
         </button>
         <h2>Entre em contato</h2>
         <p>Tire dúvidas sobre sua hospedagem.</p>
-        <label for="">Nome</label>
-        <input type="text" />
-        <label for="">Email</label>
-        <input type="text" />
-        <label for="">Mensagem</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div class="input-content">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name"/>
+          <span class="error-name">Digite o nome corretamente!</span>
+        </div>
+        <div class="input-content">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email"/>
+          <span class="error-email">Digite um email válido!</span>
+        </div>
+        <div class="input-content">
+          <label for="message">Mensagem</label>
+          <textarea name="message" cols="30" rows="10" id="message"></textarea>
+          <span class="error-message">Detalhe sua mensagem corretamente!</span>
+        </div>
         <button class="btn-submit">Enviar</button>
       </form>
     </div>

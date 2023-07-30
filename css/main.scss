@@ -481,8 +481,6 @@ html {
     box-shadow: 0 0 0 10px $background;
     position: relative;
     .btn-close {
-      width: 40px;
-      height: 40px;
       border: 4px solid $color-primary;
       background: #f9f9f9;
       top: 5px;
@@ -491,6 +489,7 @@ html {
       box-shadow: 0 0 0 4px $background;
       cursor: pointer;
       i {
+        padding: 4px;
         font-size: 26px;
         color: $color-text;
         &:hover {
@@ -525,14 +524,40 @@ html {
     input {
       width: 100%;
       padding: 6px 12px;
-      border: 2px solid $black;
+      outline: 2px solid $black;
+      border: none;
       font-family: $font-lato;
+    }
+    .input-content {
+      position: relative;
+      .error-focus {
+        outline: 2px solid red;
+        border: none;
+      }
+      .sucess-focus {
+        outline: 2px solid seagreen;
+        border: none;
+      }
+      .error-name, .error-email, .error-message {
+        display: none;
+        position: absolute;
+        font-family: $font-lato;
+        color: #FF0000;
+        font-size: 14px;
+        font-weight: 400;
+        right: 0;
+        top: 2px;
+      }
+      .error-name.active, .error-email.active, .error-message.active {
+        display: block;
+      }
     }
     textarea {
       width: 100%;
       height: 64px;
       padding: 6px 12px;
       border: 2px solid $black;
+      outline: none;
     }
     .btn-submit {
       color: #f9f9f9;
