@@ -92,26 +92,78 @@ function initValidateForm() {
 
 function initHover() {
   const rooms = document.querySelectorAll("[data-rooms='room']");
+  rooms[1].classList.add("active");
 
-  if(rooms) {
+  if (rooms) {
     function activeOnHover() {
       const isActive = this.classList.contains("active");
-    
+
       rooms.forEach((room) => {
         room.classList.remove("active");
       });
-    
+
       if (!isActive) {
         this.classList.add("active");
       }
     }
-    
+
     rooms.forEach((room) => {
       room.addEventListener("click", activeOnHover);
     });
   }
 }
 
+function initTabImages() {
+  const roomsTab = document.querySelectorAll("[data-rooms='room']")
+  const images = document.querySelectorAll("[data-rooms='image']");
+  images[1].classList.add("active");
+
+  if(roomsTab && images)  {
+    function activeTab(index) {
+      images.forEach((image, i) => {
+        if (i === index) {
+          image.classList.add("active");
+        } else {
+          image.classList.remove("active");
+        }
+      });
+    }
+    
+    roomsTab.forEach((content, index) => {
+      content.addEventListener("click", () => {
+        activeTab(index);
+      });
+    })
+  }
+}
+
+function initTabTexts() {
+  const roomsTabText = document.querySelectorAll("[data-rooms='room']")
+  const texts = document.querySelectorAll("[data-rooms='text']");
+  texts[1].classList.add("active");
+  
+  if(roomsTabText && texts) {
+    function activeTab(index) {
+      texts.forEach((text, i) => {
+        if (i === index) {
+          text.classList.add("active");
+        } else {
+          text.classList.remove("active");
+        }
+      });
+    }
+    
+    roomsTabText.forEach((content, index) => {
+      content.addEventListener("click", () => {
+        activeTab(index);
+      });
+    })
+  }
+}
+
+
 initModal();
 initValidateForm();
 initHover();
+initTabImages();
+initTabTexts();

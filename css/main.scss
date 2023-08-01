@@ -200,12 +200,37 @@ html {
         padding-left: 40px;
       }
     }
-    img {
+    figure {
       width: 660px;
-      height: 400px;
-      object-fit: cover;
+      [data-rooms="image"] {
+        display: none;
+      }
+      [data-rooms="image"].active {
+        display: block;
+        width: 660px;
+        height: 400px;
+        object-fit: cover;
+        animation: show .6s forwards; 
+      }
     }
-  }
+    }
+    [data-rooms="text"] {
+      display: none;
+    }
+    [data-rooms="text"].active {
+      display: block;
+      animation: show .6s forwards;
+    }
+    @keyframes show {
+      from {
+        opacity: 0;
+        transform: translate3d(-60px, 0, 0);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
   p {
     margin-top: 60px;
     margin-left: 70px;
