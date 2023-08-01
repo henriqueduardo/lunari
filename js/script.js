@@ -90,5 +90,28 @@ function initValidateForm() {
   }
 }
 
+function initHover() {
+  const rooms = document.querySelectorAll("[data-rooms='room']");
+
+  if(rooms) {
+    function activeOnHover() {
+      const isActive = this.classList.contains("active");
+    
+      rooms.forEach((room) => {
+        room.classList.remove("active");
+      });
+    
+      if (!isActive) {
+        this.classList.add("active");
+      }
+    }
+    
+    rooms.forEach((room) => {
+      room.addEventListener("click", activeOnHover);
+    });
+  }
+}
+
 initModal();
 initValidateForm();
+initHover();

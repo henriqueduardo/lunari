@@ -185,7 +185,13 @@ html {
   color: #3b38ad;
   font-weight: 500;
   position: relative;
-  transform: translateX(40px);
+  padding-left: 40px;
+}
+.rooms-bg .rooms-content ul li.active {
+  color: #3b38ad;
+  font-weight: 500;
+  position: relative;
+  padding-left: 40px;
 }
 .rooms-bg .rooms-content img {
   width: 660px;
@@ -493,6 +499,9 @@ html {
   padding: 4px;
   font-size: 26px;
   color: #818189;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modal .modal-content .btn-close i:hover {
   transition: 0.3s;
@@ -539,17 +548,21 @@ html {
   outline: 2px solid seagreen;
   border: none;
 }
-.modal .modal-content .input-content .error-name, .modal .modal-content .input-content .error-email, .modal .modal-content .input-content .error-message {
+.modal .modal-content .input-content .error-name,
+.modal .modal-content .input-content .error-email,
+.modal .modal-content .input-content .error-message {
   display: none;
   position: absolute;
   font-family: "Lato", sans-serif;
-  color: #FF0000;
+  color: #ff0000;
   font-size: 14px;
   font-weight: 400;
   right: 0;
   top: 2px;
 }
-.modal .modal-content .input-content .error-name.active, .modal .modal-content .input-content .error-email.active, .modal .modal-content .input-content .error-message.active {
+.modal .modal-content .input-content .error-name.active,
+.modal .modal-content .input-content .error-email.active,
+.modal .modal-content .input-content .error-message.active {
   display: block;
 }
 .modal .modal-content textarea {
